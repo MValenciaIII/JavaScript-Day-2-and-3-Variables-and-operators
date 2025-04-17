@@ -49,3 +49,28 @@ numThree += 2;
 console.log(numThree);
 numThree *= 3;
 console.log(numThree);
+
+
+
+//? Day 4: Combining Variables, data types, and Operators
+
+//* Calcuating Total Price with Discounts
+
+let originalPrice = 10;
+let discountRate = 0.2;
+let isMember = true;
+
+//console.log(originalPrice)
+
+let discountAmount = originalPrice * discountRate; //20
+let discountedPrice = originalPrice - discountAmount //80
+// console.log(discountedPrice)
+
+//* Additional Discount for Members
+if (isMember) {
+    discountedPrice -= 10;
+}
+
+
+console.log("Discounted Price:", discountedPrice)
+
