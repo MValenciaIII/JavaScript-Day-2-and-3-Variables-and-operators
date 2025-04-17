@@ -74,3 +74,45 @@ console.log(a == b);
 console.log(a === b);
 console.log(a > 5 && a < 15);
 
+//! Day 4 Variables Combinations Problems
+
+
+//! Problem 1 Shopping Cart Total
+let itemPrice = 3;
+let quantity = 10;
+let discount = 0.3;
+
+let subtotal = itemPrice * quantity;
+let discountAmount = subtotal * discount;
+let total = subtotal - discountAmount;
+
+
+console.log("Subtotal:", subtotal);
+console.log("Discount Amount:", discountAmount)
+console.log("Total:", total);
+
+
+//!Problem 2 Tempature Conversion
+
+// let celsius = prompt("Enter temperature in Celsius:");
+let celsius = 32;
+
+//Conversion from string to Number data type
+celsius = Number(celsius)
+
+let fahrenheit = (celsius * 9/5) + 32;
+
+console.log(`${celsius}°C is ${fahrenheit}°F`)
+
+
+//! Problem 3 Type Coercion Exploration
+
+let num = 5;
+let str = "10";
+
+let solvedOne = str + num;
+console.log(solvedOne); // 510
+let solvedTwo = num - str;
+console.log(solvedTwo); // 5
+console.log("Equals to:", num == str);
+console.log("Strictly Equals to:", num === str);
